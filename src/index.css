@@ -1,0 +1,129 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* optional: useful if you have a fixed/sticky header */
+}
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-30px); /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@layer utilities {
+  .animate-scroll-right {
+    animation: scroll-right 18s linear infinite;
+  }
+  .animate-scroll {
+    animation: scroll 18s linear infinite;
+  }
+   .fade-in {
+    animation: fade-in 2s ease-in-out forwards;
+  }
+  .fade-in-up {
+    animation: fade-in-up 2s ease-in-out forwards;
+  }
+  .fade-in-right {
+       animation: fade-in-right 1s ease-in-out forwards;
+
+  }
+
+}
+
+
+
+@theme {
+    --color-primary: var(--primary) ;
+    --color-neutral: var(--neutral);
+    --color-secondary: var(--secondary);
+
+    --breakpoint-xx: 1200px;
+}
+
+@layer base {
+    :root{
+        --secondary: #fff;
+        --neutral: #b1b0b0;
+        --primary: #000;
+    }
+    .dark{
+           --neutral: #f3161600;
+
+  
+
+    }
+
+
+
+    h1 {
+        @apply text-4xl font-bold
+    }
+    h2{
+        @apply text-3xl font-semibold
+    }
+    h3{
+        @apply text-2xl font-medium
+    }
+    h4{
+        @apply text-xl font-semibold
+    }
+    button{
+        @apply bg-primary border-2 border-neutral py-2 px-5 rounded-xl text-[18px]
+    }
+    
+}
+@layer components{
+    .card{ @apply border-2 border-neutral rounded-3xl p-4
+    }
+    .padding {
+        @apply px-4 sm:px-8
+    }
+    .pad{
+        @apply px-4 md:px-22
+    }
+}
