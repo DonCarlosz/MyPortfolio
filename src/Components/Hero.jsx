@@ -8,7 +8,7 @@ const Hero = () => {
            <div className="flex-1">
           <h1>Akhuemokhan Isaiah</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odit
+            L  orem ipsum dolor sit amet consectetur adipisicing elit. Velit odit
             maxime corrupti atque aliquam est illum, nam commodi consequatur
             fugit natus animi? Nobis dicta neque maxime sapiente quia sed nemo!
           </p>
