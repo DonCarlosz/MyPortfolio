@@ -10,7 +10,7 @@ const array = [
   {
     icon: <Rocket />,
     title: "Frontend Development",
-    body: "Creating responsive, modern user interfaces with React and Tailwind CSS — ensuring fast performance and an engaging user experience across all devices.",
+    body: "Creating responsive, modern user interfaces with React and Tailwind CSS ensuring fast performance and an engaging user experience across all devices.",
   },
   {
     icon: <Package />,
@@ -20,13 +20,13 @@ const array = [
   {
     icon: <GitGraph />,
     title: "Full-Stack Development",
-    body: "Building scalable web applications from frontend to backend — combining clean user interfaces with robust server logic and database integration.",
+    body: "Building scalable web applications from frontend to backend combining clean user interfaces with robust server logic and database integration.",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="z-50 pt-20">
+    <section id="services" className="z-50 pt-25">
       {/* Header with underline */}
       <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 relative group w-fit mx-auto">
         Services
@@ -38,11 +38,11 @@ const Services = () => {
         {array.map((item, key) => (
           <div
             key={key}
-            className="relative bg-gray-950 px-8 py-10 rounded-3xl border border-neutral-800 hover:border-indigo-600 transition"
+            className="relative bg-gray-950 lg:bg-inherit backdrop-blur-2xl px-8 py-10 rounded-3xl border border-neutral-800 hover:border-indigo-600 transition"
           >
             <div className="inline-flex items-center gap-2 text-white">
               <span className="text-indigo-400">{item.icon}</span>
-              <p className="text-2xl font-semibold">{item.title}</p>
+              <h2 className="text-xl font-semibold">{item.title}</h2>
             </div>
 
             <hr className="border-neutral-800 my-4" />

@@ -3,7 +3,6 @@ import NavBar from "./NavBar";
 import DarkVeil from "./Background";
 import Hero from "./Hero";
 import Skills from "./Skills";
-import ContactMe from "./ContactMe";
 import Contact from "./Contact";
 import Services from "./Services";
 
@@ -11,14 +10,13 @@ const Home = () => {
   return (
     <div>
       {/* Background Layer */}
-      {/* DarkVeil for lg+ */}
-<div className="fixed -z-10 inset-0 min-h-screen hidden lg:block">
-  <DarkVeil />
-</div>
+      {/* DarkVeil visible only on lg and above */}
+      <div className="fixed -z-10 inset-0 hidden lg:block">
+        <DarkVeil />
+      </div>
 
-{/* Black fallback for small screens */}
-<div className="fixed -z-10 inset-0 min-h-screen bg-black lg:hidden"></div>
-
+      {/* Fallback black background for smaller screens */}
+      <div className="fixed -z-10 inset-0 bg-black lg:hidden"></div>
 
       {/* Navbar */}
       <NavBar />

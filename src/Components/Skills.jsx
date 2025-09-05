@@ -4,18 +4,25 @@ import { asset } from "../Images/asset";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const skills = [
+    {
+    icon: asset.figma,
+    title: "Figma",
+    description:
+      "Figma is my tool for wireframes, prototypes, and polished UI/UX designs. It helps me plan layouts and collaborate efficiently before coding.",
+  },
+    {
+    icon: asset.tailwind,
+    title: "Tailwind",
+    description:
+      "Tailwind allows me to design responsive and consistent layouts with ease. Its utility-first classes speed up development while keeping my codebase clean.",
+  },
   {
     icon: asset.react,
     title: "React",
     description:
       "I use React to build interactive and reusable components for web applications. Its virtual DOM and ecosystem help me create fast, scalable, and user-friendly interfaces.",
   },
-  {
-    icon: asset.tailwind,
-    title: "Tailwind",
-    description:
-      "Tailwind allows me to design responsive and consistent layouts with ease. Its utility-first classes speed up development while keeping my codebase clean.",
-  },
+
   {
     icon: asset.nodejs,
     title: "Node.js",
@@ -34,12 +41,7 @@ const skills = [
     description:
       "MongoDB is my go-to database for handling flexible, document-based data. It scales well with applications and integrates seamlessly with Node.js and Express.",
   },
-  {
-    icon: asset.figma,
-    title: "Figma",
-    description:
-      "Figma is my tool for wireframes, prototypes, and polished UI/UX designs. It helps me plan layouts and collaborate efficiently before coding.",
-  },
+
 ];
 
 const Skills = () => {
@@ -75,7 +77,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="my-20">
+    <section id="skills" className="lg:pt-0 pt-25">
       {/* Header with underline */}
       <h2 className="font-bold text-3xl md:text-4xl text-white mb-10 relative group text-center w-fit mx-auto">
         Skills & Stack
