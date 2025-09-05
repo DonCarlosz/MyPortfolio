@@ -7,14 +7,17 @@ import ContactMe from "./ContactMe";
 import Contact from "./Contact";
 import Services from "./Services";
 
-
 const Home = () => {
   return (
     <div>
       {/* Background Layer */}
-      <div className="fixed -z-10 inset-0">
+      {/* DarkVeil visible only on lg and above */}
+      <div className="fixed -z-10 inset-0 hidden lg:block">
         <DarkVeil />
       </div>
+
+      {/* Fallback black background for smaller screens */}
+      <div className="fixed -z-10 inset-0 bg-black lg:hidden"></div>
 
       {/* Navbar */}
       <NavBar />
