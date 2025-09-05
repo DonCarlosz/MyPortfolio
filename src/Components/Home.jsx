@@ -11,12 +11,12 @@ const Home = () => {
     <div>
       {/* Background Layer */}
       {/* DarkVeil visible only on lg and above */}
-      <div className="fixed -z-10 inset-0 hidden lg:block">
+      <div className="fixed min-h-screen -z-10 inset-0 hidden lg:block">
         <DarkVeil />
       </div>
 
       {/* Fallback black background for smaller screens */}
-      <div className="fixed -z-10 inset-0 bg-black lg:hidden"></div>
+      <div className="fixed min-h-screen -z-10 inset-0 bg-black lg:hidden"></div>
 
       {/* Navbar */}
       <NavBar />
