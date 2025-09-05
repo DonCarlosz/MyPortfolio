@@ -1,47 +1,52 @@
 import React from "react";
-import { DotIcon, GitGraph, Package, Rocket, Table2 } from "lucide-react";
+import { GitGraph, Package, Rocket, Table2 } from "lucide-react";
+
 const array = [
   {
-    icon: <GitGraph />,
-    title: "Brand Identity",
-    body: "Crafting unique, memorable brand identities that resonate with your audience — from logos to visual systems — ensuring every touchpoint reflects your brand's essence.",
+    icon: <Table2 />,
+    title: "UI/UX Design",
+    body: "Designing user-friendly layouts and prototypes in Figma, turning ideas into seamless digital experiences with attention to usability and flow.",
   },
   {
     icon: <Rocket />,
-    title: "Brand Design",
-    body: "Designing sleek, impactful packaging that not only looks stunning but also connects with your ideal customers — turning first impressions into lasting brand loyalty.",
+    title: "Frontend Development",
+    body: "Creating responsive, modern user interfaces with React and Tailwind CSS — ensuring fast performance and an engaging user experience across all devices.",
   },
   {
     icon: <Package />,
-    title: "Package Design",
-    body: "Bringing your brand to life through high-fidelity product mockups, giving you a clear, realistic preview of how your packaging and visuals will stand out in the real world.",
+    title: "Backend Development",
+    body: "Developing secure, efficient server-side applications using Node.js and Express, with APIs and database solutions that power dynamic web apps.",
   },
   {
-    icon: <Table2 />,
-    title: "Mochup Design",
-    body: "Tailored design mockups that align perfectly with your brand's aesthetic — because every detail matters when showcasing your product's true potential.",
+    icon: <GitGraph />,
+    title: "Full-Stack Development",
+    body: "Building scalable web applications from frontend to backend — combining clean user interfaces with robust server logic and database integration.",
   },
 ];
 
 const Services = () => {
   return (
-    <section className="z-50">
-      <h2 className="text-3xl font-bold text-center text-white mb-10">
+    <section id="services" className="z-50 pt-20">
+      {/* Header with underline */}
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10 relative group w-fit mx-auto">
         Services
+        <span className="block h-1 bg-indigo-500 w-1/2 mx-auto mt-2 transition-all duration-500 group-hover:w-full"></span>
       </h2>
-      <div className="grid xx:grid-cols-2 gap-5 fade-in-right">
+
+      {/* Services Grid */}
+      <div className="grid md:grid-cols-2 gap-6 fade-in-right">
         {array.map((item, key) => (
           <div
             key={key}
-            className="relative bg-gray-950 px-8 py-10 rounded-3xl"
+            className="relative bg-gray-950 px-8 py-10 rounded-3xl border border-neutral-800 hover:border-indigo-600 transition"
           >
-            <div className="inline-flex items-center gap-1.5 text-white">
-              <p>{item.icon}</p>
-              <p className="text-2xl">{item.title}</p>
+            <div className="inline-flex items-center gap-2 text-white">
+              <span className="text-indigo-400">{item.icon}</span>
+              <p className="text-2xl font-semibold">{item.title}</p>
             </div>
 
-            <hr className="text-neutral-700 my-4" />
-            <p className="text-neutral">{item.body}</p>
+            <hr className="border-neutral-800 my-4" />
+            <p className="text-neutral-400 leading-relaxed">{item.body}</p>
           </div>
         ))}
       </div>
