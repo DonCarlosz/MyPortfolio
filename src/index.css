@@ -16,6 +16,16 @@ html {
 }
 
 
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+  background-color: black; /* fallback for small screens */
+}
+
+
+
 @keyframes fade-in {
   from {
     opacity: 0; /* Start slightly lower */
