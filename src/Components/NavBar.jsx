@@ -6,7 +6,6 @@ const navContents = [
   { name: "Projects ", href: "#project" },
   { name: "Testimonials ", href: "#testimonials" },
   { name: "Contact ", href: "#contact" },
-  { name: "Get Template", href: "" },
 ];
 
 const NavBar = () => {

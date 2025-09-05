@@ -10,18 +10,16 @@ import Services from "./Services";
 
 const Home = () => {
   return (
-    <div className="bg-black">
-      {/* <div className="w-full inset-0 h-[100vh] lg:flex justify-center items-center">
+    <div>
+      <div className="fixed -z-10 inset-0">
         <DarkVeil />
-      </div> */}
+      </div>
       <NavBar />
-      <div className="px-45">
-        <Hero/>
+      <div className="px-45 z-10">
+         <Hero/>
         <Skills/>
-         <Services/>
+        <Services/>
         <Contact/>
-       
-
       </div>
       
     </div>
