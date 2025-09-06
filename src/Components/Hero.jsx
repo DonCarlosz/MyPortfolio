@@ -23,7 +23,7 @@ const Hero = () => {
             </span>
           </h2>
 
-          <p className="my-8 text-base lg:text-lg leading-relaxed fade-in-right">
+          <p className="my-8 text-base lg:text-lg leading-relaxed fade-in-right text-neutral-400">
             I'm a web development enthusiast focused on building responsive
             applications with React, Tailwind CSS, Node.js, Express, and
             MongoDB. I also explore UI/UX design with Figma and enjoy learning
