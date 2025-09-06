@@ -4,8 +4,7 @@
 
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 40px; /* optional: useful if you have a fixed/sticky header */
+  scroll-behavior: smooth; /* optional: useful if you have a fixed/sticky header */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
