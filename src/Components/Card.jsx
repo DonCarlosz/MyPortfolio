@@ -3,7 +3,7 @@ import React from 'react'
 const Card = ({ icon, title, description }) => {
   return (
     
-    <div className="bg-gray-950 lg:bg-inherit backdrop-blur-2xl border border-neutral-800 hover:border-indigo-600 transition rounded-2xl min-w-65 p-6 shadow-lg hover:shadow-xl ">
+    <div className="bg-gray-950 lg:bg-inherit fade-in-right backdrop-blur-2xl border border-neutral-800 hover:border-indigo-600 transition rounded-2xl min-w-65 p-6 shadow-lg hover:shadow-xl ">
       <div className='hover:scale-105 transition transform duration-300 overflow-hidden'>
 
   

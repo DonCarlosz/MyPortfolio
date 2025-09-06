@@ -34,11 +34,11 @@ const Services = () => {
       </h2>
 
       {/* Services Grid */}
-      <div className="grid md:grid-cols-2 gap-6 fade-in-right">
+      <div className="grid md:grid-cols-2 gap-6 ">
         {array.map((item, key) => (
           <div
             key={key}
-            className="relative bg-gray-950 lg:bg-inherit backdrop-blur-2xl px-8 py-10 rounded-3xl border border-neutral-800 hover:border-indigo-600 transition"
+            className="relative bg-gray-950 lg:bg-inherit backdrop-blur-2xl px-8 py-10 rounded-3xl border border-neutral-800 hover:border-indigo-600 fade-in-right transition"
           >
             <div className="inline-flex items-center gap-2 text-white">
               <span className="text-indigo-400">{item.icon}</span>
