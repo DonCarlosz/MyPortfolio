@@ -77,15 +77,15 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="lg:pt-0 pt-25">
+    <section id="skills" className="lg:pt-0 pt-25 ">
       {/* Header with underline */}
-      <h2 className="font-bold text-3xl md:text-4xl text-white mb-10 relative group text-center w-fit mx-auto">
+      <h2 className="fade-in-down font-bold text-2xl md:text-4xl text-white mb-10 relative group text-center w-fit mx-auto">
         Skills & Stack
         <span className="block h-1 bg-indigo-500 w-1/2 mx-auto mt-2 transition-all duration-500 group-hover:w-full"></span>
       </h2>
 
       {/* Carousel container */}
-      <div className="relative overflow-x-hidden">
+      <div className="relative overflow-x-hidden fade-in-right">
         {/* Left Button */}
         {canScrollLeft && (
           <button

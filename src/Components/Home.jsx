@@ -22,7 +22,7 @@ const Home = () => {
       <NavBar />
 
       {/* Main Content */}
-      <div className="px-4 sm:px-6 md:px-12 lg:px-20 xl:px-32 z-10">
+      <div className="px-4 sm:px-6 md:px-12 lg:px-32 z-10">
         <Hero />
         <Skills />
         <Services />

@@ -16,14 +16,14 @@ const Hero = () => {
         
         {/* Text Section */}
         <div className="flex-1 text-center lg:text-left max-w-lg">
-          <h2 className="font-bold text-3xl md:text-4xl text-white mb-10 relative group w-full flex justify-center lg:justify-start">
+          <h2 className="text-2xl md:text-4xl font-bold text-white mb-10 relative group w-full flex justify-center lg:justify-start fade-in-down">
             <span className="inline-block relative">
               About Me
               <span className="block h-1 bg-indigo-500 w-full mt-2 mx-auto scale-x-50 origin-center transition-transform duration-500 group-hover:scale-x-100"></span>
             </span>
           </h2>
 
-          <p className="my-8 text-[18px] md:text-lg lg:text-xl leading-relaxed">
+          <p className="my-8 text-base md:text-lg leading-relaxed fade-in-right">
             I'm a web development enthusiast focused on building responsive
             applications with React, Tailwind CSS, Node.js, Express, and
             MongoDB. I also explore UI/UX design with Figma and enjoy learning
@@ -33,7 +33,7 @@ const Hero = () => {
           {/* Button scrolls to Skills section */}
           <button
             onClick={scrollToSkills}
-            className="backdrop-blur-2xl bg-inherit text-indigo-500 font-medium px-4 py-2 rounded-xl flex items-center gap-2 mx-auto lg:mx-0 border border-neutral-800 hover:border-indigo-600 transition"
+            className="backdrop-blur-2xl bg-inherit text-indigo-500 font-medium px-4 py-2 rounded-xl flex items-center gap-2 mx-auto lg:mx-0 border border-neutral-800 hover:border-indigo-600 transition fade-in-up"
           >
             Let's get started
             <ArrowDown />
@@ -41,11 +41,11 @@ const Hero = () => {
         </div>
 
         {/* Image Section (hidden on small screens) */}
-        <div className="hidden lg:block relative overflow-hidden fade-in-left rounded-2xl flex-shrink-0 w-[250px] lg:w-[350px]">
+        <div className="hidden lg:block relative overflow-hidden rounded-2xl flex-shrink-0 w-[250px] lg:w-[350px]">
           <img
             src={asset.profile}
             alt="profile"
-            className="rounded-2xl w-full h-auto object-cover mix-blend-screen"
+            className="rounded-2xl w-full h-auto object-cover mix-blend-screen fade-in-left"
           />
         </div>
       </div>

@@ -14,7 +14,7 @@ const Card = ({ icon, title, description }) => {
         
       </div>
       <hr className="text-neutral-700 my-4" />
-      <p className="text-neutral-400 leading-relaxed">{description}</p>
+      <p className="text-neutral-400 text-sm sm:text-base leading-relaxed">{description}</p>
           </div>
     </div>
   )
