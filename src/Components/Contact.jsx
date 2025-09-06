@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 text-center">
       {/* Header with underline */}
-      <h2 className="font-bold text-2xl md:text-4xl text-white mb-10 relative group text-center w-fit mx-auto fade-in-down">
+      <h2 className="font-bold text-2xl lg:text-4xl text-white mb-10 relative group text-center w-fit mx-auto fade-in-down">
         Get in Touch
         <span className="block h-1 bg-indigo-500 w-1/2 mx-auto mt-2 transition-all duration-500 group-hover:w-full"></span>
       </h2>

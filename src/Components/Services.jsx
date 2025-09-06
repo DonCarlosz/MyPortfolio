@@ -28,7 +28,7 @@ const Services = () => {
   return (
     <section id="services" className="z-50 pt-25">
       {/* Header with underline */}
-      <h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-10 relative group w-fit mx-auto">
+      <h2 className="text-2xl lg:text-4xl font-bold text-center text-white mb-10 relative group w-fit mx-auto">
         Services
         <span className="block h-1 bg-indigo-500 w-1/2 mx-auto mt-2 transition-all duration-500 group-hover:w-full"></span>
       </h2>

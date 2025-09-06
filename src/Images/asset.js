@@ -5,6 +5,7 @@ import nodejs from "./Node.js.svg";
 import tailwind from './Tailwind.svg'
 import mongodb from './MongoDB.svg'
 import express from './Express.svg'
+import vite from './Vite.svg'
 
 
 
@@ -15,6 +16,7 @@ export const asset = {
     nodejs,
     tailwind,
     mongodb,
-    express
+    express,
+    vite
 
 }
