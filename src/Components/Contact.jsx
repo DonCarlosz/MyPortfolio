@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="flex justify-center gap-8 fade-in-up">
         {/* Email */}
         <a
-          href="mailto:youremail@example.com"
+          href="mailto: akhuemokhanisaiah@gmail.com"
           className="p-4 bg-gray-900 rounded-full shadow-lg hover:scale-110 hover:bg-purple-600 transition transform"
         >
           <Mail className="w-6 h-6 text-white" />
