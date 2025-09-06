@@ -67,7 +67,7 @@ const NavBar = () => {
           <a
             key={key}
             href={item.href}
-            className="text-sm sm:text-base md:text-lg text-neutral-200 hover:text-white transition"
+            className="text-lg sm:text-lg md:text-lg text-neutral-200 hover:text-white transition"
             onClick={() => setMenuOpen(false)}
           >
             {item.name}
