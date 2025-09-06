@@ -30,7 +30,7 @@ const skills = [
       "Node.js helps me develop fast, event-driven backend services. I use it to manage APIs, handle real-time data, and connect frontend apps with databases.",
   },
   {
-    icon: asset.express,
+    icon: asset.express ,
     title: "Express.js",
     description:
       "With Express, I structure my backend logic and create RESTful APIs efficiently. It simplifies routing and middleware, making server-side development smoother.",

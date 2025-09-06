@@ -11,13 +11,13 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <section className="fixed  top-4 left-0 right-0 z-40">
+    <section className="fixed  top-4 left-0 right-0 z-40 max-w-[1440px] mx-auto">
       {/* Container */}
       <div className="py-3 px-6 md:px-12 bg-black/20 fade-in-down rounded-3xl backdrop-blur-2xl border border-neutral-800 mx-4 md:mx-20">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div>
-            <a href="#" className="text-indigo-600 font-bold text-xl md:text-2xl">
+            <a href="#" className="text-indigo-500 font-bold text-xl md:text-2xl">
               D4RC
             </a>
           </div>
